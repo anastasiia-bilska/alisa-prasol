@@ -1,0 +1,33 @@
+@import '@/assets/sassStyles/colors';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: min-content;
+
+  &__contact {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 15px;
+
+    background-color: $color-primary-1;
+    border-radius: 100px;
+  }
+
+  &__contact span {
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-gray-10;
+  }
+
+  &__emoji {
+    display: inline;
+    width: 24px;
+  }
+}

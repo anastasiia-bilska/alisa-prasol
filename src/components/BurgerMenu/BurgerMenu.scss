@@ -1,0 +1,50 @@
+@import '@/assets/sassStyles/colors';
+@import '@/assets/sassStyles/mixins';
+
+.burger {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+
+  background-color: $color-primary-1;
+  border-radius: 20px;
+
+  &--active {
+    width: 68%;
+    min-width: 200px;
+    max-width: 350px;
+    height: fit-content;
+
+    border-radius: 32px;
+  }
+
+  &__list {
+    padding: 16px;
+  }
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__item a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    color: $color-gray-10;
+  }
+
+  &__button-wrapper {
+    padding: 8px;
+    background-color: $color-primary-2;
+    border-radius: 100px;
+  }
+
+  &__icon {
+    @include background-icon;
+    display: block;
+    padding: 12px;
+    background-image: url('@/assets/static/icons/burger-icon.svg');
+  }
+}

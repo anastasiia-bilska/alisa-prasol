@@ -1,0 +1,35 @@
+/* stylelint-disable scss/at-mixin-pattern */
+@mixin background-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@mixin disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+@mixin onHover {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (width >= 640px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (width >= 1200px) {
+    @content;
+  }
+}
+
+@mixin onSmall {
+  @media (width <= 300px) {
+    @content;
+  }
+}

@@ -1,0 +1,57 @@
+@import './colors';
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --doc-height: 100dvh;
+}
+
+html,
+body {
+  position: relative;
+
+  width: 100%;
+  min-width: 320px;
+
+  font-family: Matter, sans-serif;
+  font-size: 10px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $color-gray-100;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: Matter, sans-serif;
+  background: none;
+  border: none;
+}

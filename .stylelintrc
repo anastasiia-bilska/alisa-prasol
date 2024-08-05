@@ -1,14 +1,7 @@
 {
-  "extends": [
-    "stylelint-config-clean-order",
-    "stylelint-config-standard-scss"
-  ],
-  "plugins": [
-    "stylelint-scss"
-  ],
-  "ignoreFiles": [
-    "**/*.min.css"
-  ],
+  "extends": ["stylelint-config-clean-order", "stylelint-config-standard-scss"],
+  "plugins": ["stylelint-scss", "stylelint-prettier"],
+  "ignoreFiles": ["**/*.min.css"],
   "rules": {
     "at-rule-empty-line-before": null,
     "custom-property-empty-line-before": null,

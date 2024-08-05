@@ -1,0 +1,18 @@
+@import './src/assets/sassStyles/reset';
+@import './src/assets/sassStyles/colors';
+@import './src/assets/sassStyles/typography';
+@import './src/assets/sassStyles/blocks/page';
+@import './src/assets/sassStyles/blocks/container';
+
+:root {
+  // font-family: Montserrat, sans-serif;
+  color: $color-gray-100;
+}
+
+.app {
+  height: 100%;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
