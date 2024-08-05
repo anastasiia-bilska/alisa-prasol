@@ -1,0 +1,36 @@
+@import '@/assets/sassStyles/colors';
+
+.about {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    max-width: 180px;
+
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 120%;
+    color: $color-gray-80;
+  }
+
+  &__picture {
+    width: 76px;
+    height: 76px;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    color: $color-gray-100;
+  }
+
+  &__text span {
+    display: block;
+  }
+}

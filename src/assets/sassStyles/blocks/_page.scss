@@ -2,6 +2,19 @@
 
 .page {
   display: flex;
+  flex-direction: column;
   min-height: 100dvh;
   padding: 16px;
+
+  &__title {
+    margin-bottom: 48px;
+    font-size: 56px;
+    font-weight: 500;
+    color: $color-gray-80;
+  }
+
+  &__header {
+    position: sticky;
+    margin-bottom: 32px;
+  }
 }
