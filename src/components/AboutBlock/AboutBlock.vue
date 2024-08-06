@@ -3,7 +3,7 @@ import ContactMeButton from '@/components/ContactMeButton/ContactMeButton.vue';
 </script>
 
 <template>
-  <section class="about">
+  <section class="about page__block">
     <div class="about__header">
       <h2 class="about__title">UI/UX Designer</h2>
       <img

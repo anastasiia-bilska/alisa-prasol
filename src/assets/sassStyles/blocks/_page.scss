@@ -3,8 +3,10 @@
 .page {
   display: flex;
   flex-direction: column;
+
   min-height: 100dvh;
   padding: 16px;
+  padding-top: 0;
 
   &__title {
     margin-bottom: 48px;
@@ -16,5 +18,9 @@
   &__header {
     position: sticky;
     margin-bottom: 32px;
+  }
+
+  &__block {
+    margin-bottom: 48px;
   }
 }
