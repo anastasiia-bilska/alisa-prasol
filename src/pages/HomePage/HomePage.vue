@@ -3,6 +3,7 @@ import AppHeader from '@/components/AppHeader/AppHeader.vue';
 import AboutBlock from '@/components/AboutBlock/AboutBlock.vue';
 import CapabilitiesBlock from '@/components/CapabilitiesBlock/CapabilitiesBlock.vue';
 import ProjectsBlock from '@/components/ProjectsBlock/ProjectsBlock.vue';
+import QuotesBlock from '@/components/QuotesBlock/QuotesBlock.vue';
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import ProjectsBlock from '@/components/ProjectsBlock/ProjectsBlock.vue';
       <AboutBlock />
       <CapabilitiesBlock />
       <ProjectsBlock />
+      <QuotesBlock />
     </main>
   </div>
 </template>
