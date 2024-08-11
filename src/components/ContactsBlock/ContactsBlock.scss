@@ -1,0 +1,85 @@
+@import '@/assets/sassStyles/colors';
+@import '@/assets/sassStyles/mixins';
+
+.contacts {
+  padding: 40px 24px;
+  background-color: $color-gray-10;
+  border-radius: 24px;
+
+  &__title {
+    margin-bottom: 48px;
+
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 102%;
+    color: $color-primary-1;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    color: $color-gray-100;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+
+  &__link {
+    @include background-icon;
+    display: block;
+    padding: 24px;
+
+    &--instagram {
+      background-image: url('@/assets/static/icons/insta.svg');
+    }
+
+    &--tg {
+      background-image: url('@/assets/static/icons/tg.svg');
+    }
+
+    &--gmail {
+      background-image: url('@/assets/static/icons/gmail.svg');
+    }
+
+    &--linkedin {
+      background-image: url('@/assets/static/icons/linkedin.svg');
+    }
+
+    &--behance {
+      background-image: url('@/assets/static/icons/behance.svg');
+    }
+  }
+
+  &__dev {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 24px;
+
+    background-color: $color-primary-2;
+    border-radius: 24px;
+  }
+
+  &__dev-name span {
+    display: block;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    color: $color-gray-10;
+  }
+
+  &__dev-link {
+    @include background-icon;
+    display: block;
+    padding: 16px;
+    background-image: url('@/assets/static/icons/gmail.svg');
+  }
+}

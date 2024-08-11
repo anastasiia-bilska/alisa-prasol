@@ -4,6 +4,7 @@ import AboutBlock from '@/components/AboutBlock/AboutBlock.vue';
 import CapabilitiesBlock from '@/components/CapabilitiesBlock/CapabilitiesBlock.vue';
 import ProjectsBlock from '@/components/ProjectsBlock/ProjectsBlock.vue';
 import QuotesBlock from '@/components/QuotesBlock/QuotesBlock.vue';
+import ContactsBlock from '@/components/ContactsBlock/ContactsBlock.vue';
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import QuotesBlock from '@/components/QuotesBlock/QuotesBlock.vue';
       <CapabilitiesBlock />
       <ProjectsBlock />
       <QuotesBlock />
+      <ContactsBlock />
     </main>
   </div>
 </template>
