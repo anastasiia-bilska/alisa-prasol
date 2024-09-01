@@ -1,4 +1,5 @@
 @import '@/assets/sassStyles/colors';
+@import '@/assets/sassStyles/mixins';
 
 .header {
   z-index: 100;
@@ -11,6 +12,27 @@
   width: 100%;
   height: min-content;
   padding-top: 16px;
+
+  &--mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    @include onTablet {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    position: sticky;
+    top: 0;
+    display: none;
+    margin: 0 auto;
+
+    @include onTablet {
+      display: block;
+    }
+  }
 
   &__contact {
     display: flex;
@@ -27,6 +49,39 @@
   &__contact span {
     font-size: 18px;
     font-weight: 700;
+    color: $color-gray-10;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 16px 40px;
+
+    background-color: $color-primary-1;
+    border-radius: 100px;
+  }
+
+  &__picture {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    @include onTablet {
+      gap: 15px;
+    }
+    // gap: 32px;
+  }
+
+  &__item a {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
     color: $color-gray-10;
   }
 }
