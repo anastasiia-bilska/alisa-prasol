@@ -24,8 +24,16 @@
   }
 
   &__break {
-     @include onTablet {
+    @include onTablet {
       display: none;
+    }
+  }
+
+  &__content {
+    @include onTablet {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 48px;
     }
   }
 
@@ -36,18 +44,43 @@
     font-weight: 500;
     line-height: 120%;
     color: $color-gray-100;
+
+    @include onTablet {
+      width: 45%;
+      margin-bottom: 0;
+      font-size: 24px;
+    }
+
+    @include onDesktop {
+      width: 23%;
+      margin-bottom: 0;
+      font-size: 24px;
+    }
   }
 
   &__links {
     display: flex;
     justify-content: space-between;
     margin-bottom: 48px;
+
+    @include onTablet {
+      gap: 16px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__emoji {
+    display: block;
   }
 
   &__link {
     @include background-icon;
     display: block;
     padding: 24px;
+
+    @include onDesktop {
+      padding: 36px;
+    }
 
     &--instagram {
       background-image: url('@/assets/static/icons/insta.svg');
@@ -88,6 +121,11 @@
     font-weight: 500;
     line-height: 120%;
     color: $color-gray-10;
+
+    @include onTablet {
+      display: inline;
+      font-size: 24px;
+    }
   }
 
   &__dev-link {
@@ -95,5 +133,9 @@
     display: block;
     padding: 16px;
     background-image: url('@/assets/static/icons/gmail.svg');
+
+    @include onTablet {
+      padding: 28px;
+    }
   }
 }

@@ -97,6 +97,14 @@ onMounted(() => {
         />
       </li>
 
+      <li class="projects__item projects__item--extra">
+        <img
+          class="projects__item-picture projects__item-picture--extra"
+          src="@/assets/static/little-hehe-cat.png"
+          alt="Video streaming platform mobile preview"
+        />
+      </li>
+
       <li class="projects__item projects__item--nda">
         <div class="projects__item-tag projects__item-tag--nda">
           <span class="projects__nda-text">NDA</span>
