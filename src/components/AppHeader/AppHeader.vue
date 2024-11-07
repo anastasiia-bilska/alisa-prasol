@@ -21,7 +21,7 @@ const toggleBurger = () => {
       </div>
     </div>
 
-    <div class="header--desktop grid__item_#4-#9">
+    <div class="header--desktop grid__item_4-9">
       <nav class="header__nav">
         <img
           src="@/assets/static/alisa-header.png"

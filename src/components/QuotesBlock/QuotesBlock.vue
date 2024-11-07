@@ -1,8 +1,8 @@
 <script setup></script>
 
 <template>
-  <section class="quotes page__block">
-    <div class="quotes__pictures">
+  <section class="quotes page__block grid">
+    <div class="quotes__pictures grid__item_1-6">
       <img
         class="quotes__photo"
         src="@/assets/static/alisa-prasol.png"
@@ -15,7 +15,7 @@
       />
     </div>
 
-    <div class="quotes__list">
+    <div class="quotes__list grid__item_7-12">
       <div class="quotes__block">
         <div class="quotes__quote">Creativity is intelligence having fun.</div>
         <div class="quotes__author">- Albert Einstein</div>

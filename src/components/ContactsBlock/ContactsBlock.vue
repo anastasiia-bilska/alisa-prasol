@@ -3,13 +3,13 @@
 <template>
   <section class="contacts">
     <h2 class="contacts__title">
-      Let’s <br />
+      Let's <br class="contacts__break" />
       connect
     </h2>
 
     <p class="contacts__text">
       Thank you for visiting my site! Feel free to reach out if you'd like to
-      collaborate or just say hi. 💌
+      collaborate or just say hi. <span class="contacts__emoju">💌</span>
     </p>
 
     <div class="contacts__links">

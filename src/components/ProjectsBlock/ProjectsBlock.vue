@@ -83,7 +83,7 @@ onMounted(() => {
 
       <li class="projects__item projects__item--video">
         <div class="projects__item-header projects__item-header--video">
-          <h3 class="projects__item-title">
+          <h3 class="projects__item-title projects__item-title--video">
             Video stre<span class="projects__item-accent">am</span>ing platform
           </h3>
 
@@ -103,9 +103,11 @@ onMounted(() => {
           <span class="projects__nda-icon"></span>
         </div>
 
-        <h3 class="projects__item-title projects__item-title--nda">
-          E-Commerce
-        </h3>
+        <div class="projects__nda-wrapper">
+          <h3 class="projects__item-title projects__item-title--nda">
+            E-Commerce
+          </h3>
+        </div>
       </li>
     </ul>
   </section>

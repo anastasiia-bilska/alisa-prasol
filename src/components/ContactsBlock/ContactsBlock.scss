@@ -13,6 +13,20 @@
     font-weight: 500;
     line-height: 102%;
     color: $color-primary-1;
+
+    @include onTablet {
+      font-size: 80px;
+    }
+
+    @include onTablet {
+      font-size: 110px;
+    }
+  }
+
+  &__break {
+     @include onTablet {
+      display: none;
+    }
   }
 
   &__text {

@@ -8,15 +8,7 @@ import ContactMeButton from '@/components/ContactMeButton/ContactMeButton.vue';
       <h2 class="about__title">UI/UX Designer</h2>
 
       <div class="about__picture-wrapper">
-        <!-- <img
-          srcset="
-            @/assets/static/cat-desktop.png 600w,
-            @/assets/static/cat.png  300w
-          "
-          src="@/assets/static/cat.png"
-          alt="white cartoon cat"
-          class="about__picture"
-        /> -->
+        
         <picture>
           <source srcset="@/assets/static/cat-desktop.png" media="(min-width: 600px)" />
           <img src="@/assets/static/cat.png" alt="MDN" class="about__picture" />

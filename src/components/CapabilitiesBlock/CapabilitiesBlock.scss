@@ -1,9 +1,14 @@
 @import '@/assets/sassStyles/colors';
+@import '@/assets/sassStyles/mixins';
 
 .capabilities {
   padding: 40px 16px;
   background-color: $color-primary-2;
   border-radius: 24px;
+
+  @include onTablet {
+    padding: 56px 40px;
+  }
 
   &__title {
     margin-bottom: 38px;
@@ -16,12 +21,28 @@
 
     background-color: $color-gray-10;
     border-radius: 24px;
+
+    @include onTablet {
+      display: inline-block;
+      font-size: 48px;
+      border-radius: 40px;
+    }
+
+    @include onDesktop {
+      font-size: 64px;
+    }
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 24px;
+
+    @include onTablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 34px;
+    }
   }
 
   &__item {
@@ -37,6 +58,10 @@
     font-weight: 500;
     line-height: 140%;
     color: $color-gray-10;
+
+    @include onTablet {
+       font-size: 32px;
+    }
   }
 
   &__item p {
@@ -44,5 +69,9 @@
     font-weight: 500;
     line-height: 120%;
     color: $color-gray-10;
+
+    @include onTablet {
+       font-size: 24px;
+    }
   }
 }
