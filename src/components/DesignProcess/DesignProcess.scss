@@ -1,0 +1,67 @@
+@import '@/assets/sassStyles/colors';
+@import '@/assets/sassStyles/mixins';
+
+.design-process {
+  padding: 40px 24px;
+  background-color: $color-primary-2;
+  border-radius: 32px;
+
+  &__title {
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 16px;
+
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 110%;
+    color: $color-gray-100;
+    text-align: center;
+
+    background-color: $color-gray-10;
+    border-radius: 24px;
+
+    @include onTablet {
+      width: fit-content;
+      margin-bottom: 28px;
+      padding: 16px 24px;
+
+      font-size: 48px;
+
+      border-radius: 40px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 32px;
+      font-size: 64px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+
+    @include onTablet {
+      gap: 24px;
+    }
+  }
+
+  &__item {
+    padding: 16px;
+
+    font-size: 24px;
+    font-weight: 500;
+    color: $color-gray-10;
+
+    background-color: $color-primary-1;
+    border-radius: 24px;
+
+    @include onTablet {
+      font-size: 28px;
+    }
+
+    @include onDesktop {
+      font-size: 32px;
+    }
+  }
+}

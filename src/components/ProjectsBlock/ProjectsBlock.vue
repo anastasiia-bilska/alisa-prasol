@@ -29,72 +29,93 @@ onMounted(() => {
     <h2 class="projects__title">Projects</h2>
 
     <ul class="projects__list">
-      <li class="projects__item projects__item--transfer">
-        <div class="projects__item-header">
-          <h3 class="projects__item-title projects__item-title--transfer">
-            Web & File transfer service
-          </h3>
+      <li>
+        <router-link
+          to="/project?name=web-transfer"
+          class="projects__item projects__item--transfer"
+        >
+          <div class="projects__item-header">
+            <h3 class="projects__item-title projects__item-title--transfer">
+              Web & File transfer service
+            </h3>
 
-          <div class="projects__item-tag projects__item-tag--transfer">
-            saas
+            <div class="projects__item-tag projects__item-tag--transfer">
+              saas
+            </div>
           </div>
-        </div>
 
-        <img
-          class="projects__item-picture projects__item-picture--transfer"
-          src="@/assets/static/web-&-file-transfer-service.png"
-          alt="Web & File transfer service desktop preview"
-        />
+          <img
+            class="projects__item-picture projects__item-picture--transfer"
+            src="@/assets/static/web-&-file-transfer-service.png"
+            alt="Web & File transfer service desktop preview"
+          />
+        </router-link>
       </li>
 
-      <li class="projects__item projects__item--course">
-        <div class="projects__item-header projects__item-header--course">
-          <h3 class="projects__item-title projects__item-title--course">
-            Course Platform
-          </h3>
+      <li>
+        <router-link
+          to="/project?name=lms-platform"
+          class="projects__item projects__item--course"
+        >
+          <div class="projects__item-header projects__item-header--course">
+            <h3 class="projects__item-title projects__item-title--course">
+              Course Platform
+            </h3>
 
-          <div class="projects__item-tag projects__item-tag--course">LMS</div>
-        </div>
-
-        <img
-          class="projects__item-picture"
-          src="@/assets/static/course-platform.png"
-          alt="Course Platform desktop preview"
-        />
-      </li>
-
-      <li class="projects__item projects__item--job">
-        <div class="projects__item-header">
-          <h3 class="projects__item-title projects__item-title--job">
-            Job Platform
-          </h3>
-
-          <div class="projects__item-tag projects__item-tag--job">
-            Job Platform
+            <div class="projects__item-tag projects__item-tag--course">LMS</div>
           </div>
-        </div>
 
-        <img
-          class="projects__item-picture"
-          src="@/assets/static/job-platform.png"
-          alt="Job Platform desktop preview"
-        />
+          <img
+            class="projects__item-picture"
+            src="@/assets/static/course-platform.png"
+            alt="Course Platform desktop preview"
+          />
+        </router-link>
       </li>
 
-      <li class="projects__item projects__item--video">
-        <div class="projects__item-header projects__item-header--video">
-          <h3 class="projects__item-title projects__item-title--video">
-            Video stre<span class="projects__item-accent">am</span>ing platform
-          </h3>
+      <li>
+        <router-link
+          to="/project?name=job-platform"
+          class="projects__item projects__item--job"
+        >
+          <div class="projects__item-header">
+            <h3 class="projects__item-title projects__item-title--job">
+              Job Platform
+            </h3>
 
-          <div class="projects__item-tag projects__item-tag--video">App</div>
-        </div>
+            <div class="projects__item-tag projects__item-tag--job">
+              Job Platform
+            </div>
+          </div>
 
-        <img
-          class="projects__item-picture projects__item-picture--video"
-          src="@/assets/static/video-streaming.png"
-          alt="Video streaming platform mobile preview"
-        />
+          <img
+            class="projects__item-picture"
+            src="@/assets/static/job-platform.png"
+            alt="Job Platform desktop preview"
+          />
+        </router-link>
+      </li>
+
+      <li>
+        <router-link
+          to="/project?name=video-streaming-platform"
+          class="projects__item projects__item--video"
+        >
+          <div class="projects__item-header projects__item-header--video">
+            <h3 class="projects__item-title projects__item-title--video">
+              Video stre<span class="projects__item-accent">am</span>ing
+              platform
+            </h3>
+
+            <div class="projects__item-tag projects__item-tag--video">App</div>
+          </div>
+
+          <img
+            class="projects__item-picture projects__item-picture--video"
+            src="@/assets/static/video-streaming.png"
+            alt="Video streaming platform mobile preview"
+          />
+        </router-link>
       </li>
 
       <li class="projects__item projects__item--extra">
@@ -105,17 +126,22 @@ onMounted(() => {
         />
       </li>
 
-      <li class="projects__item projects__item--nda">
-        <div class="projects__item-tag projects__item-tag--nda">
-          <span class="projects__nda-text">NDA</span>
-          <span class="projects__nda-icon"></span>
-        </div>
+      <li >
+        <router-link
+          to="/project?name=e-commerce"
+         class="projects__item projects__item--nda"
+        >
+          <div class="projects__item-tag projects__item-tag--nda">
+            <span class="projects__nda-text">NDA</span>
+            <span class="projects__nda-icon"></span>
+          </div>
 
-        <div class="projects__nda-wrapper">
-          <h3 class="projects__item-title projects__item-title--nda">
-            E-Commerce
-          </h3>
-        </div>
+          <div class="projects__nda-wrapper">
+            <h3 class="projects__item-title projects__item-title--nda">
+              E-Commerce
+            </h3>
+          </div>
+        </router-link>
       </li>
     </ul>
   </section>

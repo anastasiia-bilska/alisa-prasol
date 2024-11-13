@@ -50,7 +50,12 @@
     border-radius: 24px;
 
     &--extra {
+      display: none;
       justify-content: center;
+
+      @include onTablet {
+        display: flex;
+      }
     }
   }
 

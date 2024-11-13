@@ -27,6 +27,13 @@
     @include onDesktop {
       font-size: 140px;
     }
+
+    &--project {
+      @include onTablet {
+        margin-bottom: 40px;
+        line-height: 100%;
+      }
+    }
   }
 
   &__home-first-screen {
@@ -64,6 +71,18 @@
 
     @include onTablet {
       margin-bottom: 68px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 98px;
+    }
+  }
+
+  &__project-block {
+    margin-bottom: 32px;
+
+    @include onTablet {
+      margin-bottom: 96px;
     }
 
     @include onDesktop {

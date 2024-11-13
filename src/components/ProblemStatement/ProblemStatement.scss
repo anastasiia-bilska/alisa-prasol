@@ -1,0 +1,79 @@
+@import '@/assets/sassStyles/colors';
+@import '@/assets/sassStyles/mixins';
+
+.problem-statement {
+  padding: 24px;
+  background-color: $color-gray-10;
+  border-radius: 24px;
+
+  &__icon {
+    @include background-icon;
+    display: block;
+
+    margin-bottom: 16px;
+    padding: 16px;
+
+    background-image: url('@/assets/static/icons/alert.svg');
+    background-position: 0;
+
+    @include onTablet {
+      margin-bottom: 24px;
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: 500;
+    color: $color-gray-80;
+
+    @include onTablet {
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 24px;
+      font-size: 48px;
+    }
+  }
+
+  &__block:not(:last-of-type) {
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    margin-bottom: 8px;
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 145%;
+    color: $color-gray-90;
+
+    @include onTablet {
+      margin-bottom: 12px;
+      font-size: 28px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 16px;
+      font-size: 32px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 110%;
+    color: $color-gray-90;
+
+     @include onTablet {
+      font-size: 28px;
+    }
+
+    @include onDesktop {
+      font-size: 24px;
+    }
+  }
+}
