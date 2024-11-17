@@ -1,5 +1,6 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import './main.scss';
+import './watermark'
 
 import { createApp } from 'vue';
 

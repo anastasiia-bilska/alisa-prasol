@@ -15,6 +15,14 @@ const router = createRouter({
       component: () => import('@/pages/ProjectPage/ProjectPage.vue'),
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: 'smooth',
+      };
+    }
+  },
 });
 
 export default router;

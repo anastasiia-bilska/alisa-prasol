@@ -26,10 +26,22 @@ const toggleMenu = () => {
     <Transition name="slide-fade" mode="out-in" v-show="isBurgerOpen">
       <div>
         <ul class="burger__list">
-          <li class="burger__item"><a href="#about">About me</a></li>
-          <li class="burger__item"><a href="#capabilities">Capabilities</a></li>
-          <li class="burger__item"><a href="#projects">Projects</a></li>
-          <li class="burger__item"><a href="#contact">Contact</a></li>
+          <li class="burger__item">
+            <!-- <a href="#about">About me</a> -->
+             <router-link :to="{ name: 'home', hash: '#about' }">About me</router-link>
+          </li>
+          <li class="burger__item">
+            <!-- <a href="#capabilities">Capabilities</a> -->
+             <router-link :to="{ name: 'home', hash: '#capabilities' }">Capabilities</router-link>
+          </li>
+          <li class="burger__item">
+            <!-- <a href="#projects">Projects</a> -->
+             <router-link :to="{ name: 'home', hash: '#projects' }">Projects</router-link>
+          </li>
+          <li class="burger__item">
+            <!-- <a href="#contact">Contact</a> -->
+             <router-link :to="{ name: 'home', hash: '#contact' }">Contact</router-link>
+          </li>
         </ul>
       </div>
     </Transition>
