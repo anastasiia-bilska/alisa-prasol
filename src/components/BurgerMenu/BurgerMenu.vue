@@ -1,5 +1,9 @@
 <script setup>
-import { ref, Transition, TransitionGroup } from 'vue';
+import { ref, Transition } from 'vue';
+
+const props = defineProps({
+  routeName: { type: String, required: false, default: 'home' },
+});
 
 const isBurgerOpen = ref(false);
 
@@ -27,20 +31,24 @@ const toggleMenu = () => {
       <div>
         <ul class="burger__list">
           <li class="burger__item">
-            <!-- <a href="#about">About me</a> -->
-             <router-link :to="{ name: 'home', hash: '#about' }">About me</router-link>
+            <router-link :to="{ name: 'home', hash: '#about' }">
+              About me
+            </router-link>
           </li>
           <li class="burger__item">
-            <!-- <a href="#capabilities">Capabilities</a> -->
-             <router-link :to="{ name: 'home', hash: '#capabilities' }">Capabilities</router-link>
+            <router-link :to="{ name: 'home', hash: '#capabilities' }">
+              Capabilities
+            </router-link>
           </li>
           <li class="burger__item">
-            <!-- <a href="#projects">Projects</a> -->
-             <router-link :to="{ name: 'home', hash: '#projects' }">Projects</router-link>
+            <router-link :to="{ name: 'home', hash: '#projects' }">
+              Projects
+            </router-link>
           </li>
           <li class="burger__item">
-            <!-- <a href="#contact">Contact</a> -->
-             <router-link :to="{ name: 'home', hash: '#contact' }">Contact</router-link>
+            <router-link :to="{ name: props.routeName, hash: '#contact' }">
+              Contact
+            </router-link>
           </li>
         </ul>
       </div>

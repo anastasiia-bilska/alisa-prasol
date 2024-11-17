@@ -12,7 +12,7 @@ import ContactsBlock from '@/components/ContactsBlock/ContactsBlock.vue';
     <AppHeader />
 
     <main>
-      <div class="page__home-first-screen">
+      <div class="page__home-first-screen" id="about">
         <h1 class="page__title">Alisa Prasol</h1>
         <AboutBlock />
       </div>

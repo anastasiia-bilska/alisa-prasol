@@ -22,7 +22,7 @@ const capabilitiesList = ref([
 </script>
 
 <template>
-  <section class="capabilities page__block">
+  <section class="capabilities page__block" id="capabilities">
     <h2 class="capabilities__title">Why work with me?</h2>
 
     <ul class="capabilities__list">

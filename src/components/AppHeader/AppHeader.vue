@@ -3,8 +3,11 @@ import BurgerMenu from '@/components/BurgerMenu/BurgerMenu.vue';
 import ContactMeButton from '@/components/ContactMeButton/ContactMeButton.vue';
 
 import { ref } from 'vue';
+import { useRoute } from 'vue-router';
 
 const isContactButtonVisible = ref(true);
+const route = useRoute();
+console.log(route.name)
 
 const toggleBurger = () => {
   isContactButtonVisible.value = !isContactButtonVisible.value;
@@ -14,10 +17,10 @@ const toggleBurger = () => {
 <template>
   <header class="header page__header grid">
     <div class="header--mobile">
-      <BurgerMenu @update:isBurgerOpen="toggleBurger" />
+      <BurgerMenu @update:isBurgerOpen="toggleBurger" :routeName="route.name" />
 
       <div v-show="isContactButtonVisible">
-        <ContactMeButton />
+        <ContactMeButton :routeName="route.name" />
       </div>
     </div>
 
@@ -29,10 +32,26 @@ const toggleBurger = () => {
           class="header__picture"
         />
         <ul class="header__list">
-          <li class="header__item"><a href="#about">About me</a></li>
-          <li class="header__item"><a href="#capabilities">Capabilities</a></li>
-          <li class="header__item"><a href="#projects">Projects</a></li>
-          <li class="header__item"><a href="#contact">Contact</a></li>
+          <li class="header__item">
+            <router-link :to="{ name: 'home', hash: '#about' }">
+              About me
+            </router-link>
+          </li>
+          <li class="header__item">
+            <router-link :to="{ name: 'home', hash: '#capabilities' }">
+              Capabilities
+            </router-link>
+          </li>
+          <li class="header__item">
+            <router-link :to="{ name: 'home', hash: '#projects' }">
+              Projects
+            </router-link>
+          </li>
+          <li class="header__item">
+            <router-link :to="{ name: route.name, hash: '#contact' }">
+              Contact
+            </router-link>
+          </li>
         </ul>
       </nav>
     </div>

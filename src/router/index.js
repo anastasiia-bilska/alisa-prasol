@@ -17,11 +17,20 @@ const router = createRouter({
   ],
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth',
-      };
+      const element = document.querySelector(to.hash);
+      if (element) {
+        const topOffset = 70; // Adjust this value as needed
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = window.scrollY + elementPosition - topOffset;
+
+        return window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }
     }
+
+    return savedPosition || { top: 0 }; // Default scroll behavior
   },
 });
 

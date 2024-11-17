@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="contacts">
+  <section class="contacts" id="contact">
     <h2 class="contacts__title">
       Let's <br class="contacts__break" />
       connect

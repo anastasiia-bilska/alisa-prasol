@@ -1,9 +1,16 @@
-<script setup></script>
+<script setup>
+const props = defineProps({
+  routeName: { type: String, required: false, default: 'home' },
+});
+</script>
 
 <template>
-  <button class="contact">
+  <router-link
+    :to="{ name: props.routeName, hash: '#contact' }"
+    class="contact"
+  >
     <span>Contact me ✨</span>
-  </button>
+  </router-link>
 </template>
 
 <style lang="scss" scoped>

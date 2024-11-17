@@ -25,7 +25,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="projects page__block">
+  <section class="projects page__block" id="projects">
     <h2 class="projects__title">Projects</h2>
 
     <ul class="projects__list">
